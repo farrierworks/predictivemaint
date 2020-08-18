@@ -1,0 +1,38 @@
+to do:
+
+merge failures_df with telemetry_df
+
+classification:
+
+features:
+
+*days from last maintenance
+days from last failure
+*machineID
+*model
+*age
+*normalized measurements
+*rolling 5 day std dev of normalized measurements
+
+* = feature already created
+
+labels:
+0=no failure
+1=failure
+
+classification algos:
+-CNN
+-K nearest
+
+#not sure if theres enough data to effectively predict which component would fail
+labels - stage 2 classification:
+0=no failure
+1 = comp 1 failure
+2 = comp 2 failure
+3 = comp 3 failure
+4 = comp 4 failure
+
+additional features:
+RSI of measurements
+EMA / MA of measurements
+
